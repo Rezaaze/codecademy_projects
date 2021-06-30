@@ -10,7 +10,7 @@ const mixedMessage = {
     generateRandomMessage(){
         let message = '';
     for (key in this.wordsList){
-        message += this.wordsList[key][Math.floor(Math.random()* this.wordsList[key].length)] +' ';
+        message += this.wordsList[key][Math.floor(Math.random()* this.wordsList[key].length] +' ';
     }
     return console.log(message); 
     }
@@ -19,4 +19,4 @@ const mixedMessage = {
  
 
 
-mixedMessage.generateRandomMessage;
+mixedMessage.generateRandomMessage();
