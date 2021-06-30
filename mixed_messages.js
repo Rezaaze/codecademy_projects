@@ -15,3 +15,5 @@ const messageOutput = (arr) =>{
     }
     return message;
 }
+
+console.log(messageOutput(wordsList));
