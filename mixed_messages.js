@@ -5,7 +5,7 @@ const mixedMessage = {
     midPartOneWords :['should','must','can'],
     midPartTwoWords :['eat','drive','run','believe','dance','think','learn','laugh'],
     endWords :['more','faster','less'],
-    wordsList :[startWords,midPartOneWords,midPartTwoWords,endWords],
+    wordsList :[this.startWords,this.midPartOneWords,this.midPartTwoWords,this.endWords],
 
     generateRandomMessage(){
         let message = '';
