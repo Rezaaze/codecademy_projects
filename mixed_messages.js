@@ -18,6 +18,5 @@ const mixedMessage = {
 }
  
 
-}
 
 mixedMessage.generateRandomMessage;
