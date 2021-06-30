@@ -1,19 +1,23 @@
-//First generating 4 Arrays where randomly words will picked out for the mixed message
+//First generating an object with all the values and attributes needed
+const mixedMessage = {
+    
+    startWords :['I','You','He','She','We','They'],
+    midPartOneWords :['should','must','can'],
+    midPartTwoWords :['eat','drive','run','believe','dance','think','learn','laugh'],
+    endWords :['more','faster','less'],
+    wordsList :[startWords,midPartOneWords,midPartTwoWords,endWords],
 
-const startWords = ['I','You','He','She','We','They'];
-const midPartOneWords = ['should','must','can'];
-const midPartTwoWords = ['eat','drive','run','believe','dance','think','learn','laugh'];
-const endWords = ['more','faster','less'];
-const wordsList =[startWords,midPartOneWords,midPartTwoWords,endWords];
-
-//define the function that first pick the words and put them together to a message
-
-const messageOutput = (arr) =>{
-    let message = '';
-    for (key in arr){
-        message += arr[key][Math.floor(Math.random()* arr[key].length)] +' ';
+    generateRandomMessage(){
+        let message = '';
+    for (key in this.wordsList){
+        message += this.wordsList[key][Math.floor(Math.random()* this.wordsList[key].length)] +' ';
     }
-    return message;
+    return console.log(message); 
+    }
+
+}
+ 
+
 }
 
-console.log(messageOutput(wordsList));
+mixedMessage.generateRandomMessage;
